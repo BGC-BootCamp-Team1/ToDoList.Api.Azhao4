@@ -50,6 +50,11 @@ namespace ToDoList.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(string id)
         {
+            var targetItem = await _service.GetAsync(id);
+            if (targetItem == null)
+            {
+                return NotFound();
+            }
             await _service.DeleteAsync(id);
             return NoContent();
         }
