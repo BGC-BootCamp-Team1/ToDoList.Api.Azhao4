@@ -119,3 +119,4 @@ C:\Users\AZhao4\source\repos\bootcamp\ThoughtWorks\ToDoList.Api\ToDoList.Api.Tes
 C:\Users\AZhao4\source\repos\bootcamp\ThoughtWorks\ToDoList.Api\ToDoList.Api.Test\obj\Debug\net8.0\ToDoList.Api.Test.pdb
 C:\Users\AZhao4\source\repos\bootcamp\ThoughtWorks\ToDoList.Api\ToDoList.Api.Test\obj\Debug\net8.0\ToDoList.Api.Test.genruntimeconfig.cache
 C:\Users\AZhao4\source\repos\bootcamp\ThoughtWorks\ToDoList.Api\ToDoList.Api.Test\obj\Debug\net8.0\ref\ToDoList.Api.Test.dll
+C:\Users\AZhao4\source\repos\bootcamp\ThoughtWorks\ToDoList.Api\ToDoList.Api.Test\obj\Debug\net8.0\ToDoList.Api.Test.sourcelink.json

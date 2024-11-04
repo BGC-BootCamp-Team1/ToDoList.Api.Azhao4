@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todolist.api\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|solutionrelative:todolist.api\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todoitems.test\\todoitemfactorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|solutionrelative:todoitems.test\\todoitemfactorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69DE6DBB-63D7-47E1-A134-A41B914245C2}|ToDoList.Api.Test\\ToDoList.Api.Test.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todolist.api.test\\testlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69DE6DBB-63D7-47E1-A134-A41B914245C2}|ToDoList.Api.Test\\ToDoList.Api.Test.csproj|solutionrelative:todolist.api.test\\testlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todoitems.test\\todoitems.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|solutionrelative:todoitems.test\\todoitems.test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todolist.api\\todolist.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|solutionrelative:todolist.api\\todolist.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todoitems.test\\todoitemtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAE3A591-68EC-49E6-BEFF-D41E7FB197A2}|TodoItems.Test\\TodoItems.Test.csproj|solutionrelative:todoitems.test\\todoitemtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69DE6DBB-63D7-47E1-A134-A41B914245C2}|ToDoList.Api.Test\\ToDoList.Api.Test.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todolist.api.test\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69DE6DBB-63D7-47E1-A134-A41B914245C2}|ToDoList.Api.Test\\ToDoList.Api.Test.csproj|solutionrelative:todolist.api.test\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|c:\\users\\azhao4\\source\\repos\\bootcamp\\thoughtworks\\todolist.api\\todolist.api\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE72691-B6E2-403C-971A-45DA799062E6}|ToDoList.Api\\ToDoList.Api.csproj|solutionrelative:todolist.api\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ToDoItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\Controllers\\ToDoItemsController.cs",
-              "RelativeDocumentMoniker": "ToDoList.Api\\Controllers\\ToDoItemsController.cs",
-              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\Controllers\\ToDoItemsController.cs",
-              "RelativeToolTip": "ToDoList.Api\\Controllers\\ToDoItemsController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA9wE4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:50:34.097Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TestLogger.cs",
-              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api.Test\\TestLogger.cs",
-              "RelativeDocumentMoniker": "ToDoList.Api.Test\\TestLogger.cs",
-              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api.Test\\TestLogger.cs",
-              "RelativeToolTip": "ToDoList.Api.Test\\TestLogger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "DocumentIndex": 0,
+              "Title": "TodoItemFactoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItemFactoryTest.cs",
+              "RelativeDocumentMoniker": "TodoItems.Test\\TodoItemFactoryTest.cs",
+              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItemFactoryTest.cs",
+              "RelativeToolTip": "TodoItems.Test\\TodoItemFactoryTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:42:06.455Z",
+              "WhenOpened": "2024-11-04T11:04:07.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ToDoList.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\ToDoList.Api.csproj",
+              "RelativeDocumentMoniker": "ToDoList.Api\\ToDoList.Api.csproj",
+              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\ToDoList.Api.csproj",
+              "RelativeToolTip": "ToDoList.Api\\ToDoList.Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-04T11:03:34.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoItemTest.cs",
+              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItemTest.cs",
+              "RelativeDocumentMoniker": "TodoItems.Test\\TodoItemTest.cs",
+              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItemTest.cs",
+              "RelativeToolTip": "TodoItems.Test\\TodoItemTest.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAwDUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T11:03:13.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoItems.Test.csproj",
+              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItems.Test.csproj",
+              "RelativeDocumentMoniker": "TodoItems.Test\\TodoItems.Test.csproj",
+              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\TodoItems.Test\\TodoItems.Test.csproj",
+              "RelativeToolTip": "TodoItems.Test\\TodoItems.Test.csproj",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-04T11:02:46.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToDoItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\Controllers\\ToDoItemsController.cs",
+              "RelativeDocumentMoniker": "ToDoList.Api\\Controllers\\ToDoItemsController.cs",
+              "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api\\Controllers\\ToDoItemsController.cs",
+              "RelativeToolTip": "ToDoList.Api\\Controllers\\ToDoItemsController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAowE4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T10:50:34.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ToDoItemsController.cs",
               "DocumentMoniker": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api.Test\\ToDoItemsController.cs",
               "RelativeDocumentMoniker": "ToDoList.Api.Test\\ToDoItemsController.cs",
               "ToolTip": "C:\\Users\\AZhao4\\source\\repos\\bootcamp\\ThoughtWorks\\ToDoList.Api\\ToDoList.Api.Test\\ToDoItemsController.cs",
               "RelativeToolTip": "ToDoList.Api.Test\\ToDoItemsController.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAADwv0gAAAAgAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T10:39:57.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:39:57.84Z"
             }
           ]
         }
