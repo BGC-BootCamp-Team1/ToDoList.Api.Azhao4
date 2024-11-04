@@ -15,10 +15,10 @@ public class TodoItemMongoRepository: ITodosRepository
         _todosCollection = mongoDatabase.GetCollection<TodoItemPo>(todoStoreDatabaseSettings.Value.TodoItemsCollectionName);
     }
 
-    public async Task<TodoItems.Core.TodoItem?> FindById(string? id)
+    public TodoItems.Core.TodoItem? FindById(string? id)
     {
         FilterDefinition<TodoItemPo?> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
-        TodoItemPo? todoItemPo = await _todosCollection.Find(filter).FirstOrDefaultAsync();
+        TodoItemPo? todoItemPo = _todosCollection.Find(filter).FirstOrDefault();
 
         TodoItems.Core.TodoItem todoItem = ConvertToTodoItem(todoItemPo);
         return todoItem;

@@ -32,7 +32,7 @@ public class TodoItemServiceTest
         var newItem = todoService.Create(_description, _dueDate, DueDateSetStrategy.Manual);
         var updateDescription = "test update";
 
-        todoService.Modify(newItem, updateDescription);
+        todoService.ModifyDescription(newItem.Id, updateDescription);
         
         Assert.Equal(updateDescription, newItem.Description);
         _mockRepository.Verify(repo => repo.Save(newItem), Times.Once);

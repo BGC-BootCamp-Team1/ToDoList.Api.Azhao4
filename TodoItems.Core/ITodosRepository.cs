@@ -5,5 +5,6 @@
         void Create(TodoItem item);
         int GetCountByDueDate(DateOnly date);
         void Save(TodoItem todoItem);
+        TodoItem? FindById(string? id);
     }
 }

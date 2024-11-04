@@ -20,10 +20,15 @@ namespace TodoItems.Core
             return newItem;
         }
 
-        public void Modify(TodoItem todoItem, string description)
+        public void ModifyDescription(string id, string description)
         {
-            todoItem.ModifyItem(description);
-            _todosRepository.Save(todoItem);
+            var item = _todosRepository.FindById(id);
+            if (item == null)
+            {
+                throw new KeyNotFoundException();
+            }
+            item.ModifyItem(description);
+            _todosRepository.Save(item);
         }
         
     }
