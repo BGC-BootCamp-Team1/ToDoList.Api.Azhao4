@@ -19,7 +19,7 @@ public class TodoItemMongoRepositoryTest: IAsyncLifetime
         {
             ConnectionString = "mongodb://localhost:27017",
             DatabaseName = "ToDoItems",
-            TodoItemsCollectionName = "ToDoItems"
+            CollectionName = "ToDoItems"
         });
 
         _mongoRepository = new TodoItemMongoRepository(mockSettings.Object);

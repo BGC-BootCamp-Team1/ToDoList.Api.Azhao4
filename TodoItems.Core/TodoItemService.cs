@@ -4,7 +4,7 @@ using static TodoItems.Core.ConstantsAndEnums;
 
 namespace TodoItems.Core
 {
-    public class TodoItemService
+    public class TodoItemService : ITodoItemService
     {
         private readonly ITodosRepository _todosRepository;
 

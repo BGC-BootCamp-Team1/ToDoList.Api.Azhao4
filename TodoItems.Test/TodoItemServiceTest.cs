@@ -1,8 +1,5 @@
-﻿using TodoItems.Core;
-using Moq;
-using Moq.Protected;
-using Microsoft.VisualBasic;
-using TodoItems.Core.ApplicationException;
+﻿using Moq;
+using TodoItems.Core;
 using static TodoItems.Core.ConstantsAndEnums;
 
 namespace TodoItems.Test;
@@ -31,9 +28,10 @@ public class TodoItemServiceTest
         var todoService = new TodoItemService(_mockRepository.Object);
         var newItem = todoService.Create(_description, _dueDate, DueDateSetStrategy.Manual);
         var updateDescription = "test update";
+        _mockRepository.Setup(repo => repo.FindById(newItem.Id)).Returns(newItem);
 
         todoService.ModifyDescription(newItem.Id, updateDescription);
-        
+
         Assert.Equal(updateDescription, newItem.Description);
         _mockRepository.Verify(repo => repo.Save(newItem), Times.Once);
     }
