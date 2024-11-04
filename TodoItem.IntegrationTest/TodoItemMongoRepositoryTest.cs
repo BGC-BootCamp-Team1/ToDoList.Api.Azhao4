@@ -53,7 +53,7 @@ public class TodoItemMongoRepositoryTest: IAsyncLifetime
             Description = "Buy groceries",
         };
         await _mongoCollection.InsertOneAsync(todoItemPo);
-        var todoItem = await _mongoRepository.FindById("5f9a7d8e2d3b4a1eb8a7d8e2");
+        var todoItem = _mongoRepository.FindById("5f9a7d8e2d3b4a1eb8a7d8e2");
         
         Assert.NotNull(todoItem);
         Assert.Equal("5f9a7d8e2d3b4a1eb8a7d8e2", todoItem.Id);
@@ -65,7 +65,7 @@ public class TodoItemMongoRepositoryTest: IAsyncLifetime
     {
         _mongoRepository.Create(_todoItem);
 
-        var item = await _mongoRepository.FindById(_todoItem.Id);
+        var item = _mongoRepository.FindById(_todoItem.Id);
 
         Assert.NotNull(item);
         Assert.Equal(_todoItem.Description, item.Description);
@@ -126,7 +126,7 @@ public class TodoItemMongoRepositoryTest: IAsyncLifetime
 
         _mongoRepository.Save(updateItem);
 
-        var resultItem = await _mongoRepository.FindById(updateItem.Id);
+        var resultItem = _mongoRepository.FindById(updateItem.Id);
         Assert.Equal(updateItem.Description, resultItem.Description);
     }
 
@@ -145,7 +145,7 @@ public class TodoItemMongoRepositoryTest: IAsyncLifetime
 
         _mongoRepository.Save(updateItem);
 
-        var resultItem = await _mongoRepository.FindById(updateItem.Id);
+        var resultItem = _mongoRepository.FindById(updateItem.Id);
         Assert.Equal(updateItem.Description, resultItem.Description);
     }
 }

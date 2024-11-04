@@ -6,7 +6,7 @@ namespace TodoItem.Infrastructure;
 
 public class TodoItemMongoRepository: ITodosRepository
 {
-    private readonly IMongoCollection<TodoItemPo?> _todosCollection;
+    private readonly IMongoCollection<TodoItemPo> _todosCollection;
     
     public TodoItemMongoRepository(IOptions<TodoStoreDatabaseSettings> todoStoreDatabaseSettings)
     {
@@ -17,7 +17,7 @@ public class TodoItemMongoRepository: ITodosRepository
 
     public TodoItems.Core.TodoItem? FindById(string? id)
     {
-        FilterDefinition<TodoItemPo?> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
+        FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
         TodoItemPo? todoItemPo = _todosCollection.Find(filter).FirstOrDefault();
 
         TodoItems.Core.TodoItem todoItem = ConvertToTodoItem(todoItemPo);
