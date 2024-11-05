@@ -29,8 +29,20 @@ namespace ToDoList.Api.Controllers
         [HttpPut("{id}")]
         public ActionResult<ToDoItemDto> Update(string id, [FromBody] ToDoItemDto todoItemDto)
         {
-            _service.ModifyDescription(id, todoItemDto.Description);
-            return Ok();
+            var todoItem = _service.ModifyDescription(id, todoItemDto.Description);
+            return Ok(ConvertVoToDto(todoItem));
+        }
+
+        private static ToDoItemDto ConvertVoToDto(TodoItems.Core.TodoItem todoItem)
+        {
+            return new ToDoItemDto 
+            { 
+                Description = todoItem.Description,
+                CreatedTime = todoItem.CreatedTime,
+                Id = todoItem.Id,
+                DueDate = todoItem.DueDate,
+                ModificationRecords = todoItem.ModificationRecords
+            };
         }
     }
 

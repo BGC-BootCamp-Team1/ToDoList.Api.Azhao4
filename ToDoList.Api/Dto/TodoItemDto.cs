@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using TodoItems.Core;
 
 namespace ToDoList.Api.Dto
 {
@@ -13,6 +14,9 @@ namespace ToDoList.Api.Dto
         public bool IsFavourite { get; set; } = false;
 
         public DateTimeOffset CreatedTime { get; set; } = DateTimeOffset.UtcNow;
+
+        public DateOnly? DueDate { get; set; }
+        public List<Modification> ModificationRecords { get; set; } = [];
 
         public ToDoItemDB ConvertToDB()
         {

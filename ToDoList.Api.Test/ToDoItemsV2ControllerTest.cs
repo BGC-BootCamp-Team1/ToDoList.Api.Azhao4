@@ -55,7 +55,7 @@ public class ToDoItemV2ControllerTest : IClassFixture<WebApplicationFactory<Prog
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         var content = await response.Content.ReadAsStringAsync();
 
-        var createdTodo = JsonSerializer.Deserialize<TodoItemPo>(content, new JsonSerializerOptions
+        var createdTodo = JsonSerializer.Deserialize<ToDoItemDto>(content, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         });
@@ -81,7 +81,7 @@ public class ToDoItemV2ControllerTest : IClassFixture<WebApplicationFactory<Prog
 
         var todoItem = new ToDoItemDto
         {
-            Description = "old description",
+            Description = "new description",
             CreatedTime = DateTime.Now,
             Id = "fa88103e-35bb-4b74-8ca8-075c6093eef0",
         };
@@ -94,5 +94,15 @@ public class ToDoItemV2ControllerTest : IClassFixture<WebApplicationFactory<Prog
 
         response.EnsureSuccessStatusCode();
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+        var content = await response.Content.ReadAsStringAsync();
+
+        var responseTodo = JsonSerializer.Deserialize<ToDoItemDto>(content, new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        });
+
+        Assert.NotNull(responseTodo);
+        Assert.Equal(todoItem.Description, responseTodo.Description);
     }
 }
