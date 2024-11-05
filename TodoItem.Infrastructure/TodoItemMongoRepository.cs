@@ -12,7 +12,6 @@ public class TodoItemMongoRepository: ITodosRepository
 
     public TodoItemMongoRepository(IOptions<TodoStoreDatabaseSettings> todoStoreDatabaseSettings)
     {
-        _todoStoreDatabaseSettings= todoStoreDatabaseSettings; 
         var mongoClient = new MongoClient(todoStoreDatabaseSettings.Value.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(todoStoreDatabaseSettings.Value.DatabaseName);
         _todosCollection = mongoDatabase.GetCollection<TodoItemPo>(todoStoreDatabaseSettings.Value.CollectionName);
@@ -20,10 +19,7 @@ public class TodoItemMongoRepository: ITodosRepository
 
     public TodoItems.Core.TodoItem? FindById(string id)
     {
-        //FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
-        FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq("_id", id);
-        IOptions<TodoStoreDatabaseSettings> _todoStoreDatabaseSettings1 = _todoStoreDatabaseSettings;
-        var str = $"{filter.ToString()}";
+        FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
         TodoItemPo todoItemPo = _todosCollection.Find<TodoItemPo>(filter).FirstOrDefault();
 
         TodoItems.Core.TodoItem todoItem = ConvertToTodoItem(todoItemPo);
