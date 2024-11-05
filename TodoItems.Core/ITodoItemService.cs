@@ -11,6 +11,6 @@ namespace TodoItems.Core
     {
         public TodoItem Create(string description, DateOnly? manualSetDueDate, DueDateSetStrategy strategy = DueDateSetStrategy.Manual);
 
-        public void ModifyDescription(string id, string description);
+        public TodoItem ModifyDescription(string id, string description);
     }
 }

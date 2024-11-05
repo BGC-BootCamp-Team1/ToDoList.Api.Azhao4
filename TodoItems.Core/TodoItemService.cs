@@ -20,7 +20,7 @@ namespace TodoItems.Core
             return newItem;
         }
 
-        public void ModifyDescription(string id, string description)
+        public TodoItem ModifyDescription(string id, string description)
         {
             var item = _todosRepository.FindById(id);
             if (item == null)
@@ -29,6 +29,7 @@ namespace TodoItems.Core
             }
             item.ModifyItem(description);
             _todosRepository.Save(item);
+            return item;
         }
         
     }

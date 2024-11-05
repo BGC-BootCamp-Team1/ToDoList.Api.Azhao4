@@ -7,18 +7,24 @@ namespace TodoItem.Infrastructure;
 public class TodoItemMongoRepository: ITodosRepository
 {
     private readonly IMongoCollection<TodoItemPo> _todosCollection;
-    
+    private readonly IOptions<TodoStoreDatabaseSettings> _todoStoreDatabaseSettings;
+
+
     public TodoItemMongoRepository(IOptions<TodoStoreDatabaseSettings> todoStoreDatabaseSettings)
     {
+        _todoStoreDatabaseSettings= todoStoreDatabaseSettings; 
         var mongoClient = new MongoClient(todoStoreDatabaseSettings.Value.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(todoStoreDatabaseSettings.Value.DatabaseName);
         _todosCollection = mongoDatabase.GetCollection<TodoItemPo>(todoStoreDatabaseSettings.Value.CollectionName);
     }
 
-    public TodoItems.Core.TodoItem? FindById(string? id)
+    public TodoItems.Core.TodoItem? FindById(string id)
     {
-        FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
-        TodoItemPo? todoItemPo = _todosCollection.Find(filter).FirstOrDefault();
+        //FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq(x => x.Id, id);
+        FilterDefinition<TodoItemPo> filter = Builders<TodoItemPo>.Filter.Eq("_id", id);
+        IOptions<TodoStoreDatabaseSettings> _todoStoreDatabaseSettings1 = _todoStoreDatabaseSettings;
+        var str = $"{filter.ToString()}";
+        TodoItemPo todoItemPo = _todosCollection.Find<TodoItemPo>(filter).FirstOrDefault();
 
         TodoItems.Core.TodoItem todoItem = ConvertToTodoItem(todoItemPo);
         return todoItem;
